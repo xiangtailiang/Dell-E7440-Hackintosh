@@ -2,15 +2,15 @@
 
 This Branch is for DELL Latitude E7440 with A25 bios system with the following specs:
 
-Intel i5 4300U CPU
-Intel HD4400 GPU
-16Gb Ram DDR3 1600
-SSD SAMSUNG SSD SM841
-Wifi replace with Broadcom BCM94322
+- Intel i5 4300U CPU
+- Intel HD4400 GPU
+- 8Gb Ram DDR3 1600
+- SSD SAMSUNG SSD SM841
+- Wifi replace with Broadcom BCM94322
 
 What works:
 
-Everything
+- Everything
 
 # OS:
 Use High sierra or Mojave.
@@ -32,11 +32,13 @@ on your Hack.
 
 Then in terminal run the Clean&Rebuild script in this main folder.
 from inside this repos folder do the following commands:
+```shell
 chmod +x permission-E7440.sh && ./permission-E7440.sh
+```
 
 Enjoy your Hackintosh!
 
-#Sources:
+# Sources:
 OSXLatitude
 Own Research
 Lilu & Friends
