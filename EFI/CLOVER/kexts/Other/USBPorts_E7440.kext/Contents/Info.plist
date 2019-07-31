@@ -22,14 +22,14 @@
 	<string>1.0</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>MacBookPro11,1-EHC1</key>
+		<key>MacBookPro11,1-EH01</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
 			<key>IOClass</key>
 			<string>AppleUSBHostMergeProperties</string>
 			<key>IONameMatch</key>
-			<string>EHC1</string>
+			<string>EH01</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBEHCIPCI</string>
 			<key>IOProviderMergeProperties</key>
