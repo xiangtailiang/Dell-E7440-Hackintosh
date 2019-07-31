@@ -138,31 +138,101 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
-		<key>#FakeID</key>
-		<dict>
-			<key>IntelGFX</key>
-			<string>0x04128086</string>
-		</dict>
+		<key>Arbitrary</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>SDXC reader - RP05</string>
+				<key>CustomProperties</key>
+				<array>
+					<dict>
+						<key>Disabled</key>
+						<false/>
+						<key>Key</key>
+						<string>device_type</string>
+						<key>Value</key>
+						<string>Media controller</string>
+					</dict>
+					<dict>
+						<key>Disabled</key>
+						<false/>
+						<key>Key</key>
+						<string>model</string>
+						<key>Value</key>
+						<string>O2 Micro SD card reader</string>
+					</dict>
+					<dict>
+						<key>Disabled</key>
+						<false/>
+						<key>Key</key>
+						<string>name</string>
+						<key>Value</key>
+						<string>SD/MMC Card Reader</string>
+					</dict>
+					<dict>
+						<key>Disabled</key>
+						<false/>
+						<key>Key</key>
+						<string>compatible</string>
+						<key>Value</key>
+						<string>pci14e4,16bc</string>
+					</dict>
+					<dict>
+						<key>Disabled</key>
+						<false/>
+						<key>Key</key>
+						<string>subsystem-vendor-id</string>
+						<key>Value</key>
+						<data>
+						axAAAA==
+						</data>
+					</dict>
+				</array>
+				<key>PciAddr</key>
+				<string>03:00:00</string>
+			</dict>
+		</array>
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<integer>0</integer>
+			<string>No</string>
 		</dict>
 		<key>Properties</key>
 		<dict>
-			<key>PciRoot(0)/Pci(0x02,0)</key>
+			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
 			<dict>
-				<key>#Comment</key>
-				<string>Intel HD Graphics</string>
-				<key>#Comment-0</key>
-				<string>9MB cursor bytes (as per orginal vbo idea)</string>
-				<key>#Comment-1</key>
-				<string>0x0a260006 disable 0105 port, change 0204 port to HDMI (RehabMan)</string>
+				<key>layout-id</key>
+				<data>
+				DAAAAA==
+				</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>#framebuffer-unifiedmem</key>
+				<data>
+				AAAAgA==
+				</data>
+				<key>AAPL,ig-platform-id</key>
+				<data>
+				BgAmCg==
+				</data>
+				<key>device-id</key>
+				<data>
+				EgQAAA==
+				</data>
 				<key>framebuffer-con1-alldata</key>
 				<data>
-				AgQJAAAIAACHAAAA/wAAAAEAAABAAAAA
+				AQUSAAAIAACHAAAA
 				</data>
 				<key>framebuffer-con1-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con2-alldata</key>
+				<data>
+				AgQSAAAEAACHAAAA
+				</data>
+				<key>framebuffer-con2-enable</key>
 				<data>
 				AQAAAA==
 				</data>
@@ -170,109 +240,31 @@
 				<data>
 				AACQAA==
 				</data>
-				<key>framebuffer-memorycount</key>
+				<key>framebuffer-fbmem</key>
 				<data>
-				AgAAAA==
+				AACQAA==
 				</data>
 				<key>framebuffer-patch-enable</key>
 				<data>
 				AQAAAA==
 				</data>
-				<key>framebuffer-portcount</key>
+				<key>framebuffer-stolenmem</key>
 				<data>
-				AgAAAA==
-				</data>
-			</dict>
-			<key>PciRoot(0)/Pci(0x03,0)</key>
-			<dict>
-				<key>#Comment</key>
-				<string>Intel HDMI HDA</string>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
-				<key>layout-id</key>
-				<integer>3</integer>
-			</dict>
-			<key>PciRoot(0)/Pci(0x14,0)</key>
-			<dict>
-				<key>#Comment</key>
-				<string>Intel xHCI</string>
-				<key>AAPL,current-available</key>
-				<integer>2100</integer>
-				<key>AAPL,current-extra</key>
-				<integer>2200</integer>
-				<key>AAPL,current-extra-in-sleep</key>
-				<integer>1600</integer>
-				<key>AAPL,max-port-current-in-sleep</key>
-				<integer>2100</integer>
-				<key>RM,disable_FakePCIID</key>
-				<integer>1</integer>
-				<key>subsystem-id</key>
-				<data>
-				cHIAAA==
-				</data>
-				<key>subsystem-vendor-id</key>
-				<data>
-				hoAAAA==
-				</data>
-			</dict>
-			<key>PciRoot(0)/Pci(0x1a,0)</key>
-			<dict>
-				<key>#Comment</key>
-				<string>Intel EHCI #2</string>
-				<key>AAPL,current-available</key>
-				<integer>2100</integer>
-				<key>AAPL,current-extra</key>
-				<integer>2200</integer>
-				<key>AAPL,current-extra-in-sleep</key>
-				<integer>1600</integer>
-				<key>AAPL,max-port-current-in-sleep</key>
-				<integer>2100</integer>
-				<key>subsystem-id</key>
-				<data>
-				cHIAAA==
-				</data>
-				<key>subsystem-vendor-id</key>
-				<data>
-				hoAAAA==
-				</data>
-			</dict>
-			<key>PciRoot(0)/Pci(0x1b,0)</key>
-			<dict>
-				<key>#Comment</key>
-				<string>Intel HDA</string>
-				<key>PinConfigurations</key>
-				<data>
-				</data>
-				<key>layout-id</key>
-				<integer>12</integer>
-			</dict>
-			<key>PciRoot(0)/Pci(0x1d,0)</key>
-			<dict>
-				<key>#Comment</key>
-				<string>Intel EHCI #1</string>
-				<key>AAPL,current-available</key>
-				<integer>2100</integer>
-				<key>AAPL,current-extra</key>
-				<integer>2200</integer>
-				<key>AAPL,current-extra-in-sleep</key>
-				<integer>1600</integer>
-				<key>AAPL,max-port-current-in-sleep</key>
-				<integer>2100</integer>
-				<key>subsystem-id</key>
-				<data>
-				cHIAAA==
-				</data>
-				<key>subsystem-vendor-id</key>
-				<data>
-				hoAAAA==
+				AAAwAQ==
 				</data>
 			</dict>
 		</dict>
 		<key>USB</key>
 		<dict>
+			<key>AddClockID</key>
+			<true/>
+			<key>FixOwnership</key>
+			<true/>
 			<key>Inject</key>
-			<false/>
+			<true/>
 		</dict>
+		<key>UseIntelHDMI</key>
+		<false/>
 	</dict>
 	<key>DisableDrivers</key>
 	<array>
@@ -325,11 +317,15 @@
 	<dict>
 		<key>Inject</key>
 		<dict>
+			<key>ATI</key>
+			<false/>
 			<key>Intel</key>
 			<false/>
+			<key>NVidia</key>
+			<false/>
 		</dict>
-		<key>ig-platform-id</key>
-		<string>0x0a260006</string>
+		<key>NvidiaSingle</key>
+		<false/>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
