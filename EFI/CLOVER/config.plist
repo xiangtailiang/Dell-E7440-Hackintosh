@@ -369,16 +369,14 @@
 			<dict>
 				<key>Comment</key>
 				<string>Enable TRIM for non-Apple SSDs</string>
-				<key>Find</key>
-				<data>
-				AEFQUExFIFNTRAA=
-				</data>
+				<key>Disabled</key>
+				<true/>
 				<key>Name</key>
 				<string>com.apple.iokit.IOAHCIBlockStorage</string>
+				<key>Find</key>
+				<data>AEFQUExFIFNTRAA=</data>
 				<key>Replace</key>
-				<data>
-				AAAAAAAAAAAAAAA=
-				</data>
+				<data>AAAAAAAAAAAAAAA=</data>
 			</dict>
 		</array>
 	</dict>
@@ -430,7 +428,7 @@
 		<key>ProductName</key>
 		<string>MacBookPro11,1</string>
 		<key>SerialNumber</key>
-		<string>C02L12WJFHXX</string>
+		<string>C02L12WJFH00</string>
 		<key>Trust</key>
 		<true/>
 		<key>Version</key>
